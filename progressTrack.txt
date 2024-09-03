@@ -1,0 +1,22 @@
+// implementation 
+
+face detection 
+take 2 pictures send to server 
+
+
+
+server side 
+
+validate picture in two images 
+
+if they are same , extract facial data 
+append to user data encoded base64 
+
+
+// 
+
+validate user online 
+
+final navigations 
+
+vercel deployment - done 

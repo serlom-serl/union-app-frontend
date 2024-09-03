@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "UUnionPayApp",
+    "slug": "UUnionPayApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/adaptive-ic.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#8D88FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera.",
+        "NSMicrophoneUsageDescription": "$(PRODUCT_NAME) needs access to your Microphone."
+      }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-notifications",
+      [
+        "expo-camera",
+        {
+          "cameraPermisions": "Allow app to access camera",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone."
+        }
+      ]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "android.permission.CAMERA",
+          "android.permission.RECORD_AUDIO"
+        ]
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.gen8th.UUnionPayApp",
+      "googleServicesFile": "./test-banking-app-3b3b5-firebase-adminsdk-cmast-96db86b5ee.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b5a480f5-fd5d-451c-9ce8-7c46cef91e10"
+      }
+    }
+  }
+}
